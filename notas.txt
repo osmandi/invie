@@ -1,0 +1,3 @@
+Todo en CSS es una caja
+Alineación en HTML
+El div se agrega cuando queremos usar efectos visuales

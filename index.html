@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Invie</title>
-    <link rel="stylesheet" href="css/invie.css" />    
+    <link rel="stylesheet" href="css/invie.css" />
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
   </head>
   <body>
-      <header id="header" class="header"> <!-- Header -->
-        <figure> <!-- Logotipo -->
+      <header id="header contenedor" class="header"> <!-- Header -->
+        <figure class="logotipo"> <!-- Logotipo -->
           <img src="images/invie.png" width="186" height="60" alt="Invie logo"/>
         </figure>
         <nav class="menu"> <!-- Menu -->
@@ -26,11 +26,13 @@
         </nav>
       </header>
       <section id="portada" class="portada"> <!-- portada -->
-        <h1 class="titulo">Guitarras invisibles</h1><!-- titulo -->
-        <h3 class="tittle-a">Sé la estrella de rock que siempre quisiste ser</h3> <!-- resumen -->
-        <button>Conoce más</button><!-- boton -->
+        <div class="contenedor">
+          <h1 class="titulo">Guitarras invisibles</h1><!-- titulo -->
+          <h3 class="tittle-a">Sé la estrella de rock que siempre quisiste ser</h3> <!-- resumen -->
+          <button>Conoce más</button><!-- boton -->
+        </div>
       </section>
-      <section id="guitarras" class="guitarras"> <!-- Guitarras -->
+      <section id="guitarras" class="guitarras contenedor"> <!-- Guitarras -->
         <h2>Nuestras guitarras</h2><!-- titulo -->
         <article class="guitarra"> <!-- Guitarra 1 -->
           <img src="images/invie-acustica.png" alt="Invie acústica" width="200"/>
