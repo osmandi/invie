@@ -7,51 +7,105 @@
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
   </head>
   <body>
-      <header id="header contenedor" class="header"> <!-- Header -->
-        <figure class="logotipo"> <!-- Logotipo -->
-          <img src="images/invie.png" width="186" height="60" alt="Invie logo"/>
-        </figure>
-        <nav class="menu"> <!-- Menu -->
-          <ul> <!-- Lista desordenada -->
-            <li>
-              <a href="#guitarras">Guitarras</a>
-            </li>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="precios.html">Precios</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section id="portada" class="portada"> <!-- portada -->
+      <section id="portada" class="portada background"> <!-- portada -->
+        <header id="header" class="header contenedor"> <!-- Header -->
+          <figure class="logotipo"> <!-- Logotipo -->
+            <img src="images/invie.png" width="186" height="60" alt="Invie logo"/>
+          </figure>
+          <nav class="menu"> <!-- Menu -->
+            <ul> <!-- Lista desordenada -->
+              <li>
+                <a href="#guitarras">Guitarras</a>
+              </li>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="precios.html">Precios</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
         <div class="contenedor">
-          <h1 class="titulo">Guitarras invisibles</h1><!-- titulo -->
+          <h1 class="titulo">Guitarras <span>invie</span>sibles</h1><!-- titulo -->
           <h3 class="tittle-a">Sé la estrella de rock que siempre quisiste ser</h3> <!-- resumen -->
-          <button>Conoce más</button><!-- boton -->
+          <a href="#guitarras" class="button">Conoce más</a><!-- boton -->
         </div>
       </section>
       <section id="guitarras" class="guitarras contenedor"> <!-- Guitarras -->
         <h2>Nuestras guitarras</h2><!-- titulo -->
         <article class="guitarra"> <!-- Guitarra 1 -->
-          <img src="images/invie-acustica.png" alt="Invie acústica" width="200"/>
-          <h3 class="tittle-b">Invie Acústica</h3>
-          <ol> <!-- Lista ordenada -->
-            <li>Estlilo vintage</li>
-            <li>Madera pura</li>
-            <li>Incluye estuche de alumnio</li>
-          </ol>
+          <img class="derecha" src="images/invie-acustica.png" alt="Invie acústica" width="350"/>
+            <div class="contenedor-guitarra-a">
+            <h3 class="tittle-b">Invie Acústica</h3>
+            <ol> <!-- Lista ordenada -->
+              <li>Estlilo vintage</li>
+              <li>Madera pura</li>
+              <li>Incluye estuche de alumnio</li>
+            </ol>
+          </div>
         </article>
-        <article class="guitarra"> <!-- Guitarra 2 -->
-          <img src="images/invie-classic.png" alt="Invie classic"/ width="200">
-          <h3 class="tittle-b">Invie Classic</h3>
-          <ol> <!-- Lista ordenada -->
-            <li>Estlilo vintage</li>
-            <li>Liviana</li>
-            <li>Inicia tu carrera como guitarrista</li>
-          </ol>
+        <article class="guitarra b"> <!-- Guitarra 2 -->
+          <img class="izquierda" src="images/invie-classic.png" alt="Invie classic"/ width="350">
+          <div class="contenedor-guitarra-b">
+            <h3 class="tittle-b">Invie Classic</h3>
+            <ol> <!-- Lista ordenada -->
+              <li>Estlilo vintage</li>
+              <li>Liviana</li>
+              <li>Inicia tu carrera como guitarrista</li>
+            </ol>
+          </div>
         </article>
       </section>
+      <footer class="footer">
+        <div class="contenedor">
+          <div class="contacto">
+            <img src="images/invie-white.png" alt="logotipo blanco"/>
+            <a href="tel:+575555555"><strong>Teléfono</strong> <span>5555555</span></a>
+            <a href="maito:"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+          </div>
+
+          <form class="formulario">
+            <div class="col1">
+              <label for="nombre">Nombre</label>
+              <input type="text"required placeholder="Nombre" id="nombre" name="nombre"/>
+              <label for="email">E-mail</label>
+              <input type="email" required id="email" name="email"/>
+              <div class="sexo">
+                <label for="mujer">
+                  <input type="radio" id="mujer" name="sexo" checked value="mujer">mujer
+                </label>
+                <label for="hombre">
+                  <input type="radio" id="hombre" name="sexo" value="hombre">hombre
+                </label>
+              </div>
+              <div class="intereses">
+
+                <label for="cotizacion">
+                    <input type="checkbox" id="cotizacion" name="intereses" checked value="cotizacion">Cotización
+                </label>
+
+                <label for="reclamos">
+                    <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+                </label>
+
+                <label for="comentarios">
+                    <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+                </label>
+
+                <label for="otros">
+                    <input type="checkbox" id="otros" name="intereses">Oros
+                </label>
+              </div>
+            </div>
+
+            <div class="col2">
+              <label for="comentarios">Comentarios</label>
+              <textarea name="comentarios" rows="7" cols="30" id="comentarios"></textarea>
+              <input type="submit" value="Enviar" class="button">
+            </div>
+          </form>
+        </div>
+      </footer>
   </body>
 </html>

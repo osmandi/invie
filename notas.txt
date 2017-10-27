@@ -1,3 +1,13 @@
 Todo en CSS es una caja
 Alineación en HTML
 El div se agrega cuando queremos usar efectos visuales
+Hacer las modificaciones en el inspect es más rápido
+Símbolos especiales: dev.w3.org/html5/html-author/charref agregarlo con los assets en CSS, estos símbolos darán errores durante la indexación con google, es preferible usarlos en CSS
+
+Esto no se puede poner en los formularios (Assets)
+
+Las clases utilitarias van arriba
+
+Los div no tienen valor semántico
+
+Degradado para personalizar los botones: colorzilla.com/gradient-editor
